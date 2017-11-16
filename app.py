@@ -11,6 +11,7 @@ class Query(Resource):
 
     def __init__(self):
         """create argument parser"""
+        super().__init__()
         self.args_parser = reqparse.RequestParser()
         # raw string of query
         self.args_parser.add_argument('query')
